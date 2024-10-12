@@ -1,0 +1,19 @@
+body {
+    background-color: #bbf0c9;
+    font-family: Arial, sans-serif;
+}
+
+aside {
+  float: left;
+  width: 20%; /* ширина блока aside */
+}
+
+main {
+  float: right;
+  width: 80%; /* ширина блока main */
+}
+
+aside img {
+  width: 90%; /* ширина картинки в 90% от ширины блока aside */
+  height: auto;
+}
