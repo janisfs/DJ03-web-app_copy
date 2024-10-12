@@ -7,10 +7,19 @@
 {% block content %}
 <h1 class="text-center margin=25px">Новостная страница проекта на Django</h1>
 <br>
+{% for new in news %}
+    <div class="news-item">
+        <h3>{{ new.title }}</h3>
+        <p><strong>Краткое описание:</strong> {{ new.short_description }}</p>
+        <p><strong>Новость:</strong> {{ new.text }}</p>
+        <p><strong>Контент:</strong> {{ new.content }}</p>
+        <p><strong>Дата публикации:</strong> {{ new.pub_date|date:"d M Y H:i" }}</p>
+        <p><strong>Автор:</strong> {{ new.author.username }}</p>
+
+    </div>
+    <hr>
+{% empty %}
+    <p>Пока нет новостей.</p>
+{% endfor %}
 
 {% endblock %}
-
-
-
-
-
