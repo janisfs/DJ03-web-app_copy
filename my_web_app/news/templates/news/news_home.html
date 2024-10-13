@@ -15,8 +15,7 @@
         <p><strong>Контент:</strong> {{ new.content }}</p>
         <p><strong>Дата публикации:</strong> {{ new.pub_date|date:"d M Y H:i" }}</p>
         <p><strong>Автор:</strong> {{ new.author.username }}</p>
-        <!-- Добавляем ссылку на страницу новости -->
-        <!-- <a href="{% url 'news_detail' new.id %}">Подробнее</a> -->
+
     </div>
     <hr>
 {% empty %}
